@@ -1,30 +1,45 @@
-:root { 
-    --mid-lilac : #8566a3;
-    --light-lilac : #f0e1ff;
+:root {
+    --mid-lilac: #8566a3;
+    --light-lilac: #f0e1ff;
 }
 
-body{
+body {
     background-color: var(--light-lilac);
     color: white;
     height: 100%;
 }
 
-.heading{
+.heading {
     padding-right: 1%;
     padding-left: 1%;
-    font-family: 'Bahnschrift Condensed', 'Copperplate', Helvetica, sans-serif ;
-    
+    font-family: 'Bahnschrift Condensed', 'Copperplate', Helvetica, sans-serif;
+
 }
 
-.right{
+.right {
     justify-content: flex-end;
 }
 
-.left{
+.left {
     justify-content: flex-start;
 }
 
-#navbar{
+.content{
+    margin-top: 5%;
+    padding: 2%;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.purple{
+    background-color: var(--mid-lilac);
+}
+
+#navbar {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -32,10 +47,23 @@ body{
     background-color: var(--mid-lilac);
 }
 
-#menu{
+#menu {
     padding-left: 5%;
     display: flex;
     gap: 10%;
     justify-content: space-around;
 }
 
+#body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainphoto {
+    border-radius: 50%;
+    display: block;
+    width: 30%;
+}
