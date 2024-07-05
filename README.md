@@ -1,2 +1,8 @@
-# portfolio
-my portfolio-website 
+# My portfolio website
+
+Author: Mim Small 
+
+Creation Date: 05/07/2024 
+
+Version: 0.1 
+
