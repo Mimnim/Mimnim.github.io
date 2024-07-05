@@ -1,0 +1,41 @@
+:root { 
+    --mid-lilac : #8566a3;
+    --light-lilac : #f0e1ff;
+}
+
+body{
+    background-color: var(--light-lilac);
+    color: white;
+    height: 100%;
+}
+
+.heading{
+    padding-right: 1%;
+    padding-left: 1%;
+    font-family: 'Bahnschrift Condensed', 'Copperplate', Helvetica, sans-serif ;
+    
+}
+
+.right{
+    justify-content: flex-end;
+}
+
+.left{
+    justify-content: flex-start;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    background-color: var(--mid-lilac);
+}
+
+#menu{
+    padding-left: 5%;
+    display: flex;
+    gap: 10%;
+    justify-content: space-around;
+}
+
