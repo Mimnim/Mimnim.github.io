@@ -16,6 +16,16 @@ body {
 
 }
 
+.heading a, .heading a:visited, .heading a:active{
+    color: white;
+    text-decoration: none;
+}
+
+.heading a:hover{
+    color: var(--light-lilac);
+    text-decoration: none;
+}
+
 .right {
     justify-content: flex-end;
 }
