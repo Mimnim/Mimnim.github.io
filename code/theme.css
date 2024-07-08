@@ -8,6 +8,9 @@ body {
     color: white;
     height: 100%;
 }
+p{
+    width: 100%;
+}
 
 .heading {
     padding-right: 1%;

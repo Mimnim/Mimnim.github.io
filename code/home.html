@@ -1,23 +1,38 @@
 <!DOCTYPE html>
+
 <head>
     <link rel="stylesheet" href="theme.css">
     <script src="menu.js"></script>
+    
 </head>
+
 <body>
-    <div id = "navbar">
+    <div id="navbar">
         <div id="menu">
         </div>
-        <h2 class = "heading right" id="signature"> Mim Small</h1>
+        <h2 class="heading right" id="signature"> Mim Small</h1>
     </div>
 
     <div id="body">
         <div class="content">
-          <img id="mainphoto" src="assests/ME.jpg" alt="Photo of Mim Small">  
+            <img id="mainphoto" src="assests/ME.jpg" alt="Photo of Mim Small">
         </div>
-        
+
         <div class="content purple">
             <h2>About Me</h2>
-            <p>placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text placholder text </p>
+            <p id="AboutMe"></p>
+            <script>
+                function AboutMe() {
+                    fetch('/content/aboutme.txt')
+                        .then(response => response.text())
+                        .then(data => {
+                            document.getElementById("AboutMe").innerText = data;
+                        })
+                        .catch(error => console.error('Error:', error));
+                }
+
+                document.addEventListener("DOMContentLoaded", AboutMe);
+            </script>
         </div>
     </div>
 </body>
