@@ -48,6 +48,10 @@ p{
     justify-content: center;
 }
 
+.content a{
+    text-decoration: underline;
+}
+
 .purple{
     background-color: var(--mid-lilac);
 }
