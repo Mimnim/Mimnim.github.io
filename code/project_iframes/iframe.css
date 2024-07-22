@@ -4,14 +4,13 @@
 } /* there is probably a way to set these in java instead of copying them into each css file but I don't have time to do that right now*/ 
 
 
-.container{
+body{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     margin: 0%;
     box-sizing: border-box;
     width: fit-content;
-    
 
 }
 
