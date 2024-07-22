@@ -2,7 +2,7 @@
 
 <head>
     <link rel="stylesheet" href="iframe.css">
-    <script src="sendheight.js"></script>
+    <script src="iframe.js"></script>
 </head>
 
 <body>
@@ -22,12 +22,13 @@
     <div class="project">
     </div>
     <div class="project">
-        
+
     </div>
 
     <script>
         function sendHeight() {
             var height = document.documentElement.scrollHeight;
+            console.log('Sending height:', height);
             window.parent.postMessage({ height: height, id: window.frameElement.id }, '*');
         }
         window.onload = sendHeight;

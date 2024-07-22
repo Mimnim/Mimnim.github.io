@@ -4,6 +4,8 @@
     <link rel="stylesheet" href="theme.css">
     <script src="menu.js"></script>
     <script src="footer.js"></script>
+    <script src="iframe-resizer.js"></script>
+    <title>project page</title>
 </head>
 
 <body>
@@ -19,12 +21,13 @@
         </div>
 
         <div class="iframe-container">
-            <iframe src="project_iframes/recent.html" class="iframe"></iframe>
+            <iframe src="project_iframes/recent.html" class="iframe" id="iframe1"></iframe>
         </div>
 
         <script>
             window.addEventListener('message', function (event) {
                 if (event.data.height && event.data.id) {
+                    console.log('Received height:', event.data.height, 'for iframe:', event.data.id);
                     document.getElementById(event.data.id).style.height = event.data.height + 'px';
                 }
             });
