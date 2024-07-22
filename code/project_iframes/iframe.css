@@ -1,0 +1,19 @@
+:root {
+    --mid-lilac: #8566a3;
+    --light-lilac: #f0e1ff;
+} /* there is probably a way to set these in java instead of copying them into each css file but I don't have time to do that right now*/ 
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    /*grid template columns needs to match the number of projects in each iframe*/
+    padding: 10px;
+}
+
+.project{
+    background-color: var(--mid-lilac);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
