@@ -3,17 +3,28 @@
     --light-lilac: #f0e1ff;
 } /* there is probably a way to set these in java instead of copying them into each css file but I don't have time to do that right now*/ 
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    /*grid template columns needs to match the number of projects in each iframe*/
-    padding: 10px;
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0%;
+    box-sizing: border-box;
+    width: fit-content;
+    
+
 }
 
 .project{
     background-color: var(--mid-lilac);
     border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
+    padding: 5px;
     font-size: 30px;
     text-align: center;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin-right: 100px;
+    box-sizing: border-box;
+
 }

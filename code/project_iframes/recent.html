@@ -1,14 +1,36 @@
 <!DOCTYPE html>
+
 <head>
     <link rel="stylesheet" href="iframe.css">
+    <script src="sendheight.js"></script>
 </head>
+
 <body>
-    <div class="grid container">
+    <div class="container">
         <div class="project">
-            
         </div>
         <div class="project">
-            
+        </div>
+        <div class="project">
+        </div>
+        <div class="project">
+        </div>
+        <div class="project">
+        </div>
+        <div class="project">
+        </div>
+        <div class="project">
+        </div>
+        <div class="project">
         </div>
     </div>
+
+    <script>
+        function sendHeight() {
+            var height = document.documentElement.scrollHeight;
+            window.parent.postMessage({ height: height, id: window.frameElement.id }, '*');
+        }
+        window.onload = sendHeight;
+        window.onresize = sendHeight;
+    </script>
 </body>
