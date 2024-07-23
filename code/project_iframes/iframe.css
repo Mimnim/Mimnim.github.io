@@ -29,6 +29,6 @@ body{
 
 }
 
-.project :hover{
+.project:hover{
     background-color: aqua;
 }
