@@ -18,12 +18,6 @@ jobs:
       with:
         node-version: '14'
 
-    - name: Install dependencies
-      run: npm install # Adjust this step if you're using a different package manager or no package manager
-
-    - name: Build the site
-      run: npm run build # Adjust this step if you're using a different build command
-
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
