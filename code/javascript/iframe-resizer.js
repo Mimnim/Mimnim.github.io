@@ -1,5 +1,5 @@
 window.addEventListener('message', function (event) {
-    console.log('Message event received:', event);
+    //console.log('Message event received:', event);
     if (event.data.height && event.data.id) {
         console.log('Received height:', event.data.height, 'for iframe:', event.data.id);
         var iframe = document.getElementById(event.data.id);
