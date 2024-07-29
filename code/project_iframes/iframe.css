@@ -1,6 +1,7 @@
 :root {
     --mid-lilac: #8566a3;
     --light-lilac: #f0e1ff;
+    --i: 0;
 } /* there is probably a way to set these in java instead of copying them into each css file but I don't have time to do that right now*/ 
 
 
@@ -15,15 +16,28 @@ body{
 
 }
 
+h2{
+    padding: 0;
+    margin: 0;
+    font-size: 20pt;
+    color: white;
+    font-family: 'Bahnschrift Condensed', 'Copperplate', Helvetica, sans-serif;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
 .project{
-    background-color: var(--mid-lilac);
     border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 5px;
     font-size: 30px;
     text-align: center;
-    width: 200px;
+    width: fit-content;
+    min-height: 200px; /*stop firefox from breaking page*/
     height: 200px;
-    display: flex;
+    overflow-y: hidden;
+    display: block;
     margin-right: 100px;
     box-sizing: border-box;
 
@@ -37,30 +51,33 @@ body{
     color: inherit;
 }
 
-.overlay{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(185, 41, 144, 0.8); /* New color, slightly transparent */
-    transition: top 0.5s ease-in-out;
+.content{
+    height: fit-content;
+    display: block;
+    padding: 0%;
+    transform: translateY(var(--i));
+    transition: transform .5s ease-out;
+}
+
+.title{
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    height: 200px !important;
+    height: inherit;
+    background-color: var(--mid-lilac);
+    
 }
 
 .description{
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    height: 200px !important;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     color: white; /* Text color */
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    background-color: aqua;
 }
 
-.project:hover .project-overlay {
-    top: 0;
-}
-
-.project:hover .project-description {
-    opacity: 1;
-}
