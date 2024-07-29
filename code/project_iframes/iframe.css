@@ -1,6 +1,7 @@
 :root {
     --mid-lilac: #8566a3;
     --light-lilac: #f0e1ff;
+    --mint: #a9d3d0;
     --i: 0;
 } /* there is probably a way to set these in java instead of copying them into each css file but I don't have time to do that right now*/ 
 
@@ -78,6 +79,6 @@ p{
     justify-content: center;
     align-items: center;
     color: white; /* Text color */
-    background-color: aqua;
+    background-color: var(--mint);
 }
 
