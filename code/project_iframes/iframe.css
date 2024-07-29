@@ -18,7 +18,7 @@ body{
 }
 
 h2{
-    padding: 0;
+    padding: 5%;
     margin: 0;
     font-size: 20pt;
     color: white;
@@ -62,11 +62,13 @@ p{
 }
 
 .title{
-    padding: 0;
+    /*padding: 0;*/
     margin: 0;
     width: 200px;
     height: 200px !important;
-    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--mid-lilac);
     
 }
