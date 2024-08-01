@@ -1,5 +1,14 @@
+/**
+ * AUTHOR: Mim Small
+ * Date: July 2024
+ * 
+ * Description: this code recieves a message with the size of the content form the iframe.
+ * It then changes the height of the iframe to match.
+ */
+
 window.addEventListener('message', function (event) {
     //console.log('Message event received:', event);
+    //this was for debugging purposes
     if (event.data.height && event.data.id) {
         console.log('Received height:', event.data.height, 'for iframe:', event.data.id);
         var iframe = document.getElementById(event.data.id);

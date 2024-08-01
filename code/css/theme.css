@@ -3,6 +3,10 @@
     --light-lilac: #f0e1ff;
 }
 
+/**
+HTML TAGS
+**/
+
 body {
     background-color: var(--light-lilac);
     color: white;
@@ -12,6 +16,11 @@ body {
 p{
     width: 100%;
 }
+
+
+/**
+CLASSES
+**/
 
 .heading {
     padding-right: 1%;
@@ -74,6 +83,10 @@ p{
     border: none;
    
 }
+
+/**
+IDs
+**/
 
 #navbar {
     display: flex;
