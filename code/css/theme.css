@@ -64,6 +64,10 @@ CLASSES
     background-color: var(--mid-lilac);
 }
 
+.purple img{
+    width: 90%;
+}
+
 .centered{
    display: flex;
     flex-direction: column;
