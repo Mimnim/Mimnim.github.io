@@ -1,4 +1,5 @@
 :root {
+    --dark-purple: #3a1f56;
     --mid-lilac: #8566a3;
     --light-lilac: #f0e1ff;
 }
@@ -101,7 +102,7 @@ IDs
     justify-content: space-between;
     width: 100%;
     height: auto;
-    background-color: var(--mid-lilac);
+    background-color: var(--dark-purple);
 }
 
 #menu {
@@ -130,6 +131,7 @@ IDs
     color:white;
     display: flex;
     justify-content: center;
+    background-color: var(--dark-purple);
     
 }
 
