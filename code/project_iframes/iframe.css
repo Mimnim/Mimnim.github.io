@@ -12,7 +12,7 @@ body{
     flex-wrap: nowrap;
     margin: 0%;
     box-sizing: border-box;
-    width: 100%;
+    width: fit-content;
     padding-top: 10%;
 
 }
