@@ -24,6 +24,13 @@ img{
     background-color: white;
 }
 
+button{
+    background-color: #8566a3;
+    color: white;
+    border-radius: 30%;
+
+}
+
 /**
 CLASSES
 **/
