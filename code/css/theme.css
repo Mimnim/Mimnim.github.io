@@ -28,6 +28,7 @@ CLASSES
 **/
 
 .heading {
+    color: var(--dark-purple);
     padding-right: 1%;
     padding-left: 1%;
     font-family: 'Bahnschrift Condensed', 'Copperplate', Helvetica, sans-serif;
@@ -106,7 +107,7 @@ IDs
     justify-content: space-between;
     width: 100%;
     height: auto;
-    background-color: var(--dark-purple);
+    background-color: var(--beige);
 }
 
 #menu {
@@ -135,7 +136,7 @@ IDs
     color:white;
     display: flex;
     justify-content: center;
-    background-color: var(--dark-purple);
+    background-color: var(--mid-lilac);
     
 }
 
