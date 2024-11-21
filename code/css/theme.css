@@ -3,6 +3,7 @@
     --mid-lilac: #8566a3;
     --light-lilac: #f0e1ff;
     --beige: #eae6e1;
+    --off-white: #f5f5f5;
 }
 
 /**
@@ -28,7 +29,7 @@ CLASSES
 **/
 
 .heading {
-    color: var(--dark-purple);
+    
     padding-right: 1%;
     padding-left: 1%;
     font-family: 'Bahnschrift Condensed', 'Copperplate', Helvetica, sans-serif;
@@ -36,7 +37,7 @@ CLASSES
 }
 
 .heading a, .heading a:visited, .heading a:active{
-    color: white;
+    
     text-decoration: none;
 }
 
@@ -103,11 +104,12 @@ IDs
 **/
 
 #navbar {
+    color: var(--dark-purple);
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: auto;
-    background-color: var(--beige);
+    background-color: var(--off-white);
 }
 
 #menu {
