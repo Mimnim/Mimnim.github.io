@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", loadMenu);
 
 function loadMenu(){
-    document.getElementById("menu").innerHTML = "<h1 class = 'heading left'><a href='index.html'>Home</a></h1> <h1 class = 'heading left'><a href='projects.html'>Projects</a></h1>";
+    document.getElementById("menu").innerHTML = "<h1 class = 'heading right'><a href='index.html'>Home</a></h1> <h1 class = 'heading right'><a href='projects.html'>Projects</a></h1>";
 }
 

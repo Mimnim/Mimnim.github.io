@@ -2,6 +2,7 @@
     --dark-purple: #3a1f56;
     --mid-lilac: #8566a3;
     --light-lilac: #f0e1ff;
+    --beige: #eae6e1;
 }
 
 /**
@@ -9,7 +10,7 @@ HTML TAGS
 **/
 
 body {
-    background-color: white;
+    background-color: var(--beige);
     color: white;
     height: 100%;
     margin: 0%;
