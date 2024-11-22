@@ -74,7 +74,7 @@ CLASSES
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    border-radius: 30%;
+    border-radius: 50%;
 }
 
 .link_button:hover{
@@ -125,6 +125,7 @@ IDs
     height: auto;
     background-color: var(--off-white);
     align-items: center;
+    border-bottom: 1px solid black;
 }
 
 #menu_right {
