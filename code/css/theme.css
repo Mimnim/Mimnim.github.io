@@ -126,11 +126,11 @@ IDs
     background-color: var(--off-white);
 }
 
-#menu {
+#menu_right {
     padding-left: 5%;
     display: flex;
     gap: 10%;
-    /*justify-content: space-around;*/
+    justify-content: space-around;
 }
 
 #body{
