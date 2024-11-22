@@ -24,13 +24,6 @@ img{
     background-color: white;
 }
 
-button{
-    background-color: #8566a3;
-    color: white;
-    border-radius: 30%;
-
-}
-
 /**
 CLASSES
 **/
@@ -72,6 +65,20 @@ CLASSES
 .content a{
     color: white;
     text-decoration: underline;
+}
+
+.link_button{
+    background-color: var(--mid-lilac);
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 30%;
+}
+
+.link_button:hover{
+    background-color: var(--light-lilac);
 }
 
 .purple{
