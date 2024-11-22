@@ -129,7 +129,7 @@ IDs
 
 #menu_right {
     align-items: center;
-    padding-left: 5%;
+    padding-right: 5%;
     display: flex;
     gap: 10%;
     justify-content: space-around;
