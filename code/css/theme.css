@@ -81,7 +81,7 @@ CLASSES
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    border-radius: 50%;
+    border-radius: 15%;
 }
 
 .link_button:hover{
