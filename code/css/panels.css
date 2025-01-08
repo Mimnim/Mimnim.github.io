@@ -33,6 +33,11 @@ Classes
     flex-direction: column;
 }
 
+.image-container{
+    display: flex;
+    justify-content: center;
+}
+
 /**
 IDs
 **/
