@@ -7,7 +7,7 @@ function loadContent() {
   
   for (let i = 0; i < 8; i++) {
     let doc = "part" + i.toString();
-    let promise = fetch("./index_panels/" + doc)
+    let promise = fetch("./index_panels/" + doc + ".html")
       .then(response => response.text())
       .then(data => data)
       .catch(error => {
