@@ -21,14 +21,10 @@ Classes
 
 .left{
     width : 50%;
-    display: flex;
-    justify-content: center;
 }
 
 .right{
-    width : 50%;
-    display: flex;
-    justify-content: center;
+    width : 50%
     
 }
 
@@ -44,5 +40,5 @@ IDs
 #mainphoto {
     border-radius: 15%;
     display: block;
-    width: 30%;
+    width: 50%;
 }
