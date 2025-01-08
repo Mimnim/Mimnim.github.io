@@ -6,7 +6,8 @@ Classes
     margin-top: 5%;
     padding: 2%;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     height: auto;
     color: black;
     font-family: "Shippori Mincho", Arial, Helvetica, sans-serif;
