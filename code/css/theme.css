@@ -59,21 +59,6 @@ CLASSES
     justify-content: flex-start;
 }
 
-.content{
-    margin-top: 5%;
-    padding: 2%;
-    width: 80%;
-    height: auto;
-    color: black;
-    font-family: "Shippori Mincho", Arial, Helvetica, sans-serif;
-    
-}
-
-.content a{
-    color: black;
-    text-decoration: underline;
-}
-
 .link_button{
     background-color: var(--mid-lilac);
     color: white;
@@ -149,12 +134,6 @@ IDs
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-#mainphoto {
-    border-radius: 50%;
-    display: block;
-    width: 30%;
 }
 
 #footer{

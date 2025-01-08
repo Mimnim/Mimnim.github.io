@@ -1,0 +1,29 @@
+/**
+Classes 
+**/
+
+.content{
+    margin-top: 5%;
+    padding: 2%;
+    width: 80%;
+    display: flex;
+    height: auto;
+    color: black;
+    font-family: "Shippori Mincho", Arial, Helvetica, sans-serif;
+    
+}
+
+.content a{
+    color: black;
+    text-decoration: underline;
+}
+
+/**
+IDs
+**/
+
+#mainphoto {
+    border-radius: 15%;
+    display: block;
+    width: 30%;
+}
