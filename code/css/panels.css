@@ -33,7 +33,7 @@ Classes
     flex-direction: column;
 }
 
-.image-container{
+.img-container{
     display: flex;
     justify-content: center;
 }
