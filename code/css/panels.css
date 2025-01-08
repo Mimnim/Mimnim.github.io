@@ -42,6 +42,7 @@ Classes
 
 .button{
     width : fit-content(inherit);
+    color: white;
 }
 /**
 IDs
