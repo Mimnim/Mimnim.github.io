@@ -1,3 +1,7 @@
+p{
+    padding: 10%;
+}
+
 /**
 Classes 
 **/
@@ -38,6 +42,9 @@ Classes
     justify-content: center;
 }
 
+.button{
+    width : fit-content(inherit);
+}
 /**
 IDs
 **/
