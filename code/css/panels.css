@@ -19,10 +19,12 @@ Classes
 
 .left{
     width : 50%;
+    justify-self: flex-start;
 }
 
 .right{
     width : 30%;
+    justify-self: flex-end;
 }
 
 /**
