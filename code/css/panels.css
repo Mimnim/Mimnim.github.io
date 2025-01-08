@@ -18,6 +18,14 @@ Classes
     text-decoration: underline;
 }
 
+.left{
+    width : 50%;
+}
+
+.right{
+    width : 30%;
+}
+
 /**
 IDs
 **/
