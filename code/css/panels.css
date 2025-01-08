@@ -6,6 +6,7 @@ Classes
     margin-top: 5%;
     padding: 2%;
     display: flex;
+    justify-content: center;
     height: auto;
     color: black;
     font-family: "Shippori Mincho", Arial, Helvetica, sans-serif;
@@ -19,12 +20,10 @@ Classes
 
 .left{
     width : 50%;
-    justify-self: flex-start;
 }
 
 .right{
     width : 30%;
-    justify-self: flex-end;
 }
 
 /**
