@@ -24,7 +24,12 @@ img{
     background-color: white;
 }
 
+h1{
+    font-size: medium;
+}
+
 h2{
+    font-size: large;
     font-weight: normal;
     color: var(--dark-gray);
 }
