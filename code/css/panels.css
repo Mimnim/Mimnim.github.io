@@ -1,7 +1,3 @@
-p{
-    padding: 10%;
-}
-
 /**
 Classes 
 **/
@@ -35,6 +31,7 @@ Classes
 .text{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .img-container{
