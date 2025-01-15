@@ -39,6 +39,11 @@ Classes
     width : fit-content(inherit);
     color: white;
 }
+
+.stock{
+    display: block;
+    width: 100%;
+}
 /**
 IDs
 **/
