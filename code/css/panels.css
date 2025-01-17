@@ -21,7 +21,7 @@ Classes
     flex-wrap: wrap;
 }
 
-.test-panel{
+.test_panel{
     background-color: var(--mid-lilac);
     border-radius: 10%;
     width: 20%;
