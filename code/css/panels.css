@@ -24,6 +24,8 @@ Classes
 .test-panel{
     background-color: var(--mid-lilac);
     border-radius: 10%;
+    width: 20%;
+    padding: 10%;
 }
 
 .left{
