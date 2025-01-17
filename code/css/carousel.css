@@ -1,0 +1,21 @@
+.carousel { 
+    display: flex; 
+    overflow: hidden; 
+    width: 100%;  
+} 
+
+.slide { 
+    display: flex; 
+    width: 100%; 
+} 
+
+.carousel_panel { 
+    flex: 1; 
+    min-width: 50%;
+    box-sizing: border-box; 
+    padding: 10px; 
+    background-color: black;
+} 
+
+.carousel_button { 
+    margin-top: 10px; }
