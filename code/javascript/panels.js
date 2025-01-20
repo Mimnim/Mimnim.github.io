@@ -6,8 +6,11 @@ function loadContent() {
   let promises = [];
   
   for (let i = 0; i < 8; i++) {
+    const metaTag = document.querySelector('meta[name="panel_location"]');
+    const panel_location = metaTag && metaTag.getAttribute('content');
+
     let doc = "part" + i.toString();
-    let promise = fetch("/code/index_panels/" + doc + ".html")
+    let promise = fetch(panel_location + doc + ".html")
       .then(response => response.text())
       .then(data => {
         // Extract and load script tags from the fetched content
@@ -36,3 +39,4 @@ function loadContent() {
     document.getElementById('content-body').innerHTML = panels_dump;
   });
 }
+
