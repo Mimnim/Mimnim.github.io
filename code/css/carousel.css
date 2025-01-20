@@ -13,7 +13,8 @@
 
 .carousel_panel { 
     justify-content: center;
-    flex: 1; 
+    display: flex; 
+    flex-direction: column;
     min-width: 50%;
     box-sizing: border-box; 
     padding: 10px; 
