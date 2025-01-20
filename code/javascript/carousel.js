@@ -1,7 +1,7 @@
 console.log('JavaScript loaded');
 
 let currentIndex = 0;
-const items = document.querySelectorAll('.carousel-item');
+const items = document.querySelectorAll('.slide');
 
 function showNextItem() {
     items[currentIndex].classList.remove('active');
