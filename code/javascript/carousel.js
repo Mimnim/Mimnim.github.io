@@ -2,6 +2,11 @@ console.log('JavaScript loaded');
 
 let currentIndex = 0;
 const items = document.querySelectorAll('.slide');
+const slides = document.querySelectorAll('.slide');
+slides.forEach(slide => {
+    console.log(slide);
+});
+
 
 function showNextItem() {
     items[currentIndex].classList.remove('active');
