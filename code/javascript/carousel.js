@@ -1,20 +1,33 @@
-const carousel = document.querySelector('.carousel');
-const slides = document.querySelectorAll('.slide');
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
-let index = 0;
+console.log('JavaScript loaded');
 
-function showSlide(idx) {
-    const offset = -idx * 100;
-    carousel.style.transform = `translateX(${offset}%)`;
+let currentIndex = 0;
+const items = document.querySelectorAll('.carousel-item');
+
+function showNextItem() {
+    items[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % items.length;
+    items[currentIndex].classList.add('active');
 }
 
-prevBtn.addEventListener('click', () => {
-    index = (index > 0) ? index - 1 : slides.length - 1;
-    showSlide(index);
+function showPreviousItem() {
+    items[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex - 1 + items.length) % items.length;
+    items[currentIndex].classList.add('active');
+}
+
+setInterval(showNextItem, 2000);
+
+let startX;
+
+document.querySelector('.carousel').addEventListener('mousedown', (event) => {
+    startX = event.clientX;
 });
 
-nextBtn.addEventListener('click', () => {
-    index = (index < slides.length - 1) ? index + 1 : 0;
-    showSlide(index);
+document.querySelector('.carousel').addEventListener('mouseup', (event) => {
+    const endX = event.clientX;
+    if (startX > endX) {
+        showNextItem();
+    } else if (startX < endX) {
+        showPreviousItem();
+    }
 });
