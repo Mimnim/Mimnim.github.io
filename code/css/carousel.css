@@ -11,6 +11,7 @@
 } 
 
 .carousel_panel { 
+    justify-content: center;
     flex: 1; 
     min-width: 50%;
     box-sizing: border-box; 

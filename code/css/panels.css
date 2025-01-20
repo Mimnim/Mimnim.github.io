@@ -19,13 +19,15 @@ Classes
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .text_panel{
     background-color: var(--mid-lilac);
     border-radius: 10%;
     width: 20%;
-    margin: 10%;
+    color: white;
+    padding: 5%;
 }
 
 .left{
