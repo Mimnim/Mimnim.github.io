@@ -9,7 +9,20 @@ function loadContent() {
     let doc = "part" + i.toString();
     let promise = fetch("/code/index_panels/" + doc + ".html")
       .then(response => response.text())
-      .then(data => data)
+      .then(data => {
+        // Extract and load script tags from the fetched content
+        let tempDiv = document.createElement('div');
+        tempDiv.innerHTML = data;
+        let scripts = tempDiv.querySelectorAll('script');
+        
+        scripts.forEach(script => {
+          let newScript = document.createElement('script');
+          newScript.textContent = script.textContent;
+          document.body.appendChild(newScript);
+        });
+        
+        return tempDiv.innerHTML;
+      })
       .catch(error => {
         console.error('Error fetching content:', error);
         return ""; 
