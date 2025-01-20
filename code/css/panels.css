@@ -16,6 +16,10 @@ Classes
     
 }
 
+.col{
+    flex-direction: column !important;
+}
+
 .container{
     display: flex;
     flex-direction: row;
@@ -29,6 +33,10 @@ Classes
     width: 20%;
     color: white;
     padding: 5%;
+}
+
+.text_centered{
+    text-align: center;
 }
 
 .left{
